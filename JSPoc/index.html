@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning JavaScript</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body onload="fetchDetails()">
+    <div class="container">
+      
+      <h1>JavaScript <small>learning experience</small></h1>
+      <div class="jumbotron">
+        <h3>Here I am going to say something.</h3>
+        <form id="issueInputForm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="descInput" placeholder="Describe what is in your mind ...">
+          </div>
+          <!-- <button type="submit" onclick="youTappedMe()" class="btn btn-primary">Tap Me</button> -->
+          <button type="submit" class="btn btn-primary">Tap</button>
+        </form>
+      </div>
+
+      <div class="col-lg-14">
+          <div class="well">
+            <div id="utappedme" />
+          </div>
+      </div>
+
+      <div class="col-lg-15">
+          <div id="mydetails" />
+      </div>
+      <div class="footer">
+        <p>&copy <a href="https://www.linkedin.com/in/riteshbangal" target="_blank">Ritesh Bangal</a> | <a href="https://github.com/riteshbangal" target="_blank">My Github</a></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple <small>Calculator</small></h1>
+      <div class="userInput">
+        <input id="firstInput" type="text" value="" placeholder="Enter numeric value"/>
+        <input id="secondInput" type="text" value=""  placeholder="Enter numeric value"/>
+      </div>
+
+      <div class="result">
+        <br/><div id="output" class="output">Enter your choice.</div>
+      </div>
+
+      <div class="userOperation">
+        <br/>
+        <input type="button" onclick="addition()" value="Add" >
+        <input type="button" onclick="substraction()" value="Subtract" >
+        <input type="button" onclick="multiplication()" value="Multiply" >
+        <input type="submit" onclick="division()" value="Divide" >
+      </div>
+
+      <div class="footer">
+        <p>&copy <a href="https://www.linkedin.com/in/riteshbangal" target="_blank">Ritesh Bangal</a> | <a href="https://github.com/riteshbangal" target="_blank">My Github</a></p>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+
+  </body>
+</html>

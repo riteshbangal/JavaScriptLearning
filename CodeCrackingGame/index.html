@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Cracking Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Code Cracking <small>Game</small></h1>
+      <div class="generatingCode">
+        <div id="generateCode"> 
+          <input type="button" onclick="generateCode()" value="Generate a Code" />
+          <p id="generatedCode" ondblclick="unmaskCode()">Waiting for the code to be generated...</p>
+        </div>        
+      </div>
+
+      <div class="crackingCode">
+        <div class="solutionSection">
+          <h3>Enter your guess</h3>
+        </div>
+
+        <div class="userInputs">
+            <input type="number" id="firstGuess" placeholder="First guess" size="1" style="width: 100px;" >
+            <input type="number" id="secondGuess" placeholder="Second guess" size="1" style="width: 100px;" >
+            <input type="number" id="thirdGuess" placeholder="Third guess" size="1" style="width: 100px;" >
+        </div>
+
+        <div class="crackCode">
+          <br/>
+          <input type="button" onclick="crack()" value="Try code" />
+          <div class="crackedMessage">
+            <p id="crackedMessage"><br/></p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="footer">
+        <p>&copy <a href="https://www.linkedin.com/in/riteshbangal" target="_blank">Ritesh Bangal</a> | <a href="https://github.com/riteshbangal" target="_blank">My Github</a></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
